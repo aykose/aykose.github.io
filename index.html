@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexi Gondry — Portfolio</title>
+<meta name="description" content="Portfolio d'Alexi Gondry — étudiant en cybersécurité, projets et compétences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- NAVIGATION -->
+<!-- ============================================================ -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="#top" class="nav-logo">AG</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ============================================================ -->
+<!-- HERO -->
+<!-- ============================================================ -->
+<section id="top" class="hero">
+  <p class="hero-eyebrow">Bonjour, je suis</p>
+  <h1 class="hero-name">Alexi Gondry</h1>
+  <p class="hero-tagline">Étudiant en cybersécurité — Bachelor Cybersécurité, EPITA</p>
+  <p class="hero-sub">Sécurité offensive, administration système &amp; automatisation.</p>
+  <div class="hero-actions">
+    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+    <a href="#contact" class="btn btn-ghost">Me contacter</a>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- A PROPOS -->
+<!-- ============================================================ -->
+<section id="about" class="section">
+  <h2 class="section-title">À propos</h2>
+  <div class="section-body">
+    <p>
+      Actuellement en première année de Bachelor Cybersécurité à l'EPITA, je m'intéresse
+      largement à la sécurité offensive, à l'administration système et à l'automatisation.
+      En parallèle de mes études, j'effectue un stage centré sur l'administration
+      Linux/Windows, l'ordonnancement de jobs (Autosys) et le déploiement automatisé
+      (XLDeploy).
+    </p>
+    <p>
+      <!-- Modifie ce paragraphe librement : c'est ton texte de présentation. -->
+      J'aime comprendre comment les choses fonctionnent en profondeur, que ce soit en
+      démontant un binaire, en scriptant une tâche répétitive ou en construisant un outil
+      de A à Z.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- COMPETENCES -->
+<!-- ============================================================ -->
+<section id="skills" class="section">
+  <h2 class="section-title">Compétences</h2>
+
+  <div class="skills-group">
+    <h3 class="skills-subtitle">Domaines</h3>
+    <ul class="tag-list">
+      <!-- Une compétence par ligne : copie/colle <li> pour en ajouter, supprime pour en retirer -->
+      <li class="tag">Sécurité offensive</li>
+      <li class="tag">Reverse engineering</li>
+      <li class="tag">Administration système (Linux/Windows)</li>
+      <li class="tag">Automatisation &amp; scripting</li>
+      <li class="tag">Développement web</li>
+    </ul>
+  </div>
+
+  <div class="skills-group">
+    <h3 class="skills-subtitle">Outils &amp; technologies</h3>
+    <ul class="tag-list">
+      <!-- Même principe : un outil par <li> -->
+      <li class="tag">Python</li>
+      <li class="tag">Bash</li>
+      <li class="tag">Git</li>
+      <li class="tag">Linux</li>
+      <li class="tag">Ghidra</li>
+      <li class="tag">Docker</li>
+      <li class="tag">Autosys</li>
+      <li class="tag">XLDeploy</li>
+      <li class="tag">React</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PROJETS -->
+<!-- ============================================================ -->
+<section id="projects" class="section">
+  <h2 class="section-title">Projets</h2>
+
+  <div class="project-grid">
+
+    <!-- ==== PROJET (copie ce bloc <article> pour en ajouter un) ==== -->
+    <article class="project-card">
+      <h3 class="project-title">Analyse statique — malware Mirai/Gafgyt</h3>
+      <p class="project-desc">
+        Reverse engineering complet d'un échantillon réel de malware IoT, en analyse
+        statique pure (sans exécution) : C2, persistance, kill-switch, modules DDoS,
+        mapping MITRE ATT&amp;CK.
+      </p>
+      <ul class="tag-list tag-list-sm">
+        <li class="tag">Ghidra</li>
+        <li class="tag">Reverse engineering</li>
+        <li class="tag">MITRE ATT&amp;CK</li>
+      </ul>
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Voir le repo →</a>
+      </div>
+    </article>
+    <!-- ==== FIN PROJET ==== -->
+
+    <article class="project-card">
+      <h3 class="project-title">KeyPass</h3>
+      <p class="project-desc">
+        Gestionnaire de mots de passe en ligne de commande, écrit en Python.
+      </p>
+      <ul class="tag-list tag-list-sm">
+        <li class="tag">Python</li>
+        <li class="tag">CLI</li>
+      </ul>
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Voir le repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <h3 class="project-title">VulnLab</h3>
+      <p class="project-desc">
+        Application Flask volontairement vulnérable, conçue pour s'entraîner à la
+        sécurité offensive.
+      </p>
+      <ul class="tag-list tag-list-sm">
+        <li class="tag">Flask</li>
+        <li class="tag">Sécurité offensive</li>
+      </ul>
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Voir le repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <h3 class="project-title">RitalAuto</h3>
+      <p class="project-desc">
+        Site vitrine automobile (véhicules, pièces, services) en React / Vite / Tailwind.
+      </p>
+      <ul class="tag-list tag-list-sm">
+        <li class="tag">React</li>
+        <li class="tag">Tailwind</li>
+      </ul>
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Voir le repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <h3 class="project-title">Bibliothèque de scripts Bash</h3>
+      <p class="project-desc">
+        Scripts Bash prêts à l'emploi, documentés en français, pour des tâches
+        d'administration système et de sécurité courantes.
+      </p>
+      <ul class="tag-list tag-list-sm">
+        <li class="tag">Bash</li>
+        <li class="tag">Sysadmin</li>
+      </ul>
+      <div class="project-links">
+        <a href="#" target="_blank" rel="noopener">Voir le repo →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CONTACT -->
+<!-- ============================================================ -->
+<section id="contact" class="section">
+  <h2 class="section-title">Contact</h2>
+  <p class="section-body">
+    Une question, une opportunité, envie d'échanger ? N'hésite pas à me contacter.
+  </p>
+
+  <ul class="contact-list">
+    <!-- Remplace les liens ci-dessous par les tiens -->
+    <li>
+      <a href="mailto:ton.email@example.com">Email — ton.email@example.com</a>
+    </li>
+    <li>
+      <a href="https://github.com/ton-pseudo-github" target="_blank" rel="noopener">GitHub</a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a>
+    </li>
+  </ul>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Alexi Gondry</p>
+</footer>
+
+</body>
+</html>
